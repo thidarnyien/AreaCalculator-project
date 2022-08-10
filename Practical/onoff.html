@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #detectArea{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(189, 129, 245);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="lightOn()">Switch On</button>
+    <img id="bulb" src="./off.gif" alt="">
+    <button onclick="lightOff()">Switch Off</button>
+    <hr>
+    <button onclick="toggleSwitch()">Switch</button>
+    <hr>
+    <button onclick="toggleSwitch()">Switch One</button>
+    <button onclick="toggleSwitch()" >Switch Two</button>
+    <div id="detectArea"></div>
+    <script>
+        let image=document.getElementById("bulb");
+        
+
+        let lightOn= () => {
+            image.setAttribute("src","./on.gif")
+        }
+        let lightOff= () => {
+            image.setAttribute("src","./off.gif")
+        }
+        let toggleSwitch = () => {
+            if(image.getAttribute("src")=="./on.gif"){
+                lightOff();
+            }else {
+                lightOn();
+            }
+        }
+        let detectArea= document.getElementById("detectArea");
+        detectArea.addEventListener("mouseenter", ()=>{
+            lightOn();
+            return;
+        })
+        detectArea.addEventListener("mouseout",()=>{
+            setTimeout(lightOff,3000)
+        })
+
+
+    </script>
+</body>
+</html>

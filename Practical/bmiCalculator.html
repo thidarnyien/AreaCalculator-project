@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>BMI Calculator</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(185, 184, 184);
+        }
+        .bmi{
+            width: 500px;
+            padding: 20px;
+            border: 1px solid rgb(41, 39, 39);
+            background-color: white
+        }
+        .btn-primary{
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bmi">
+        <h1>BMI Calculator</h1>
+        <h3>US Units</h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Age</span>
+            </div>
+            <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            <span class="age">ages: 2-120 years</span>
+        </div>
+        <label for="">Gender</label>
+        <input type="radio" id="male" name="fav_language" value="male">
+        <label for="html">Male</label>
+        <input type="radio" id="female" name="fav_language" value="female">
+        <label for="html">Female</label><br><br>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Height</span>
+            </div>
+            <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">feet, inches</span>
+              </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Weight</span>
+            </div>
+            <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">pounds</span>
+              </div>
+        </div>
+        <button type="button" class="btn btn-primary">Calculate</button>
+        <button type="button" class="btn btn-light">Clear</button>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>

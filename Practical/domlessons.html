@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Lesson</title>
+    <style>
+        body{
+            width: 500px;
+        }
+        .form{
+            margin-bottom: 15px;
+        }
+        #rf{
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        label{
+            width: 170px;
+            display: inline-block;
+        }
+        input{
+            width: 170px;
+            display: inline-block;
+        }
+        #submit{
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-left: 285
+            px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM သင်ခန်းစာ</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores atque dolores assumenda in, sit fugit nostrum exercitationem at nulla debitis culpa eius. Nostrum repellendus blanditiis vero voluptatum eum cumque officiis?</p>
+    <a href="https://www.youtube.com/watch?v=zq_D3HC60ds">Youtube</a>
+    <hr>
+    <h3>Fruit Lists</h3>
+    <ul>
+        <li>Apple</li>
+        <li class="fruit">Orange</li>
+        <li>Mango</li>
+        <li class="fruit">Banana</li>
+        <li>Strawberry</li>
+    </ul> <hr>
+    <h3>Friend Lists</h3>
+    <ol>
+        <li>Su Su</li>
+        <li>Mg Mg</li>
+        <li>Kyaw Kyaw</li>
+        <li>Aung Aung</li>
+        <li>Nandar</li>
+    </ol> <hr>
+    <form action="">
+        <fieldset class="formContainer">
+            <legend id="rf">Register Form</legend>
+            <div class="form ">
+                <label for="name">Your Name</label>
+                <input type="text">
+            </div> 
+            <div class="form ">
+                <label for="gender">Your gender</label>
+                <select  id="gender">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select> 
+            </div>
+            <div class="form ">
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date">
+            </div>
+            <div class="form ">
+                <label for="photo">Photo</label>
+                <select name="" id="">
+                    <option value="">Browse</option> 
+                    <span>No file selected!</span>
+                </select>
+            </div>
+            <div class="form ">
+                <label for="location">Your Country</label>
+                <select name="" id="">
+                    <option value="">Myanmar</option>
+                    <option value="">India</option>
+                    <option value="">Japan</option>
+                    <option value="">Singapore</option>
+                    <option value="">America</option>
+                    <option value="">England</option>
+                    <option value="">France</option>
+                </select>
+            </div>
+            <div class="form ">
+                <label for="">Email or Phone Number</label>
+                <input type="text">
+            </div>
+            <div class="form ">
+                <label for="password">Create Password</label>
+                <input type="password">
+            </div>
+            <div class="form ">
+                <label for="password">Comfirm Your Password</label>
+                <input type="password">
+            </div>
+            <div class="form ">
+                <label for="address">Your Address</label>
+                <textarea></textarea>
+            </div>
+            <button id="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
